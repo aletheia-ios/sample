@@ -1,0 +1,96 @@
+[
+  {
+    "match": "/manga/series/feed",
+    "body": {
+      "total": 2,
+      "data": [
+        {
+          "id": "c1",
+          "attributes": {
+            "title": "First",
+            "chapter": "1",
+            "translatedLanguage": "en",
+            "publishAt": "2024-01-02T03:04:05+00:00"
+          },
+          "relationships": [{ "type": "scanlation_group", "attributes": { "name": "Group" } }]
+        },
+        {
+          "id": "c2",
+          "attributes": {
+            "title": "Dropped",
+            "chapter": "2",
+            "translatedLanguage": "pt-br",
+            "publishAt": "2024-01-03T00:00:00+00:00"
+          },
+          "relationships": []
+        }
+      ]
+    }
+  },
+  {
+    "match": "/manga/series?",
+    "body": {
+      "data": {
+        "id": "series",
+        "attributes": {
+          "title": { "ja": "アーリャさん" },
+          "altTitles": [
+            { "ja-ro": "Alya-san" },
+            { "en": "Alya Sometimes Hides Her Feelings in Russian" }
+          ],
+          "description": { "en": "A story." },
+          "status": "ongoing",
+          "contentRating": "suggestive",
+          "originalLanguage": "ja",
+          "tags": [
+            { "attributes": { "name": { "en": "Comedy" } } },
+            { "attributes": { "name": { "en": "Romance" } } }
+          ]
+        },
+        "relationships": [
+          { "type": "cover_art", "attributes": { "fileName": "primary.jpg" } },
+          { "type": "author", "attributes": { "name": "Sunsunsun" } },
+          { "type": "artist", "attributes": { "name": "Momoco" } }
+        ]
+      }
+    }
+  },
+  {
+    "match": "/cover?",
+    "body": {
+      "data": [
+        { "attributes": { "fileName": "v1.jpg", "volume": "1", "locale": "ja" } },
+        { "attributes": { "fileName": "v1b.jpg", "volume": "1.1", "locale": "ja" } },
+        { "attributes": { "fileName": "v2.jpg", "volume": "2", "locale": "ja" } },
+        { "attributes": { "fileName": "en.jpg", "volume": "1", "locale": "en" } }
+      ]
+    }
+  },
+  {
+    "match": "/at-home/server/chapter",
+    "body": {
+      "baseUrl": "https://cdn.example",
+      "chapter": { "hash": "h", "data": ["1.png", "2.png"] }
+    }
+  },
+  {
+    "match": "/manga?",
+    "body": {
+      "limit": 30,
+      "offset": 0,
+      "total": 1,
+      "data": [
+        {
+          "id": "series",
+          "attributes": {
+            "title": { "en": "Alya Sometimes Hides Her Feelings in Russian" },
+            "altTitles": [],
+            "contentRating": "suggestive",
+            "tags": []
+          },
+          "relationships": [{ "type": "cover_art", "attributes": { "fileName": "primary.jpg" } }]
+        }
+      ]
+    }
+  }
+]

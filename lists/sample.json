@@ -1,0 +1,5 @@
+{
+  "name": "Aletheia Sample",
+  "target": "sample",
+  "sources": ["com.example.mangadex"]
+}

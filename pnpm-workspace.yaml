@@ -1,0 +1,3 @@
+# esbuild installs its platform binary in a postinstall, which pnpm 10 blocks by default
+onlyBuiltDependencies:
+  - esbuild

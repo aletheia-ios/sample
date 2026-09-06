@@ -1,0 +1,57 @@
+{
+  "$schema": "../../node_modules/@aletheia-ios/sdk/dist/json-schema/source.json",
+  "slug": "com.example.mangadex",
+  "name": "MangaDex",
+  "description": "Read comics and manga online at MangaDex, with high quality images and support creators and translators!",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "contractVersion": "1.0",
+  "languages": ["en", "ja", "ko", "zh"],
+  "baseURL": "https://mangadex.org",
+  "referer": "https://mangadex.org",
+  "hosts": ["api.mangadex.org", "uploads.mangadex.org"],
+  "rateLimit": { "requests": 5, "per": 1 },
+  "contentRating": "mixed",
+  "sort": {
+    "default": "relevance:desc",
+    "options": [
+      { "id": "followedCount:desc", "name": "Most followed" },
+      { "id": "relevance:desc", "name": "Best match" },
+      { "id": "latestUploadedChapter:desc", "name": "Latest chapter" },
+      { "id": "createdAt:desc", "name": "Recently added" },
+      { "id": "rating:desc", "name": "Highest rated" },
+      { "id": "year:desc", "name": "Newest" },
+      { "id": "title:asc", "name": "Title (A-Z)" }
+    ]
+  },
+  "presets": [
+    {
+      "id": "popular",
+      "name": "Popular",
+      "subtitle": "Most followed on MangaDex",
+      "order": 0,
+      "sort": "followedCount:desc"
+    },
+    {
+      "id": "latest",
+      "name": "Latest Updates",
+      "subtitle": "Freshly uploaded chapters",
+      "order": 1,
+      "sort": "latestUploadedChapter:desc"
+    },
+    {
+      "id": "new",
+      "name": "New Releases",
+      "subtitle": "Recently added titles",
+      "order": 2,
+      "sort": "createdAt:desc"
+    },
+    {
+      "id": "top-rated",
+      "name": "Top Rated",
+      "subtitle": "Highest rated by the community",
+      "order": 3,
+      "sort": "rating:desc"
+    }
+  ]
+}
