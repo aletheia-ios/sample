@@ -1,0 +1,17 @@
+name: deploy
+
+# Publishes to this repository's GitHub Pages site, which needs no account and no secrets. The
+# steps live in the tools repository so this file never has to change with them.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    uses: aletheia-ios/tools/.github/workflows/publish-list.yml@v0.5.1
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
