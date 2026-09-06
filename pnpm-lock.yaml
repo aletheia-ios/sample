@@ -12,8 +12,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       '@aletheia-ios/tools':
-        specifier: ^0.5.1
-        version: 0.5.1
+        specifier: ^0.5.2
+        version: 0.5.2
       '@biomejs/biome':
         specifier: ^2.5.12
         version: 2.5.12
@@ -31,8 +31,8 @@ packages:
     resolution: {integrity: sha512-YyUV1z9kxA/0qaI/tHM0sP+3TPA8VZtXtGbsL2e/1xt5TqMwi10qBZg7NMu5UQUSF679yO4BfGyNztqeHyrn9g==}
     engines: {node: '>=22'}
 
-  '@aletheia-ios/tools@0.5.1':
-    resolution: {integrity: sha512-wNzlzDTgYWWeP8e7UyOD1qO4BJ9eQmOj0zQxR+i6RsErgaF5kdH7olO89G1F7AQewe0NnSpnLN52pnc9PWDfeg==}
+  '@aletheia-ios/tools@0.5.2':
+    resolution: {integrity: sha512-D176ZylRLCh3+PUgygMlfIqot38Ku49dnIdc5coklSATCM9N330pQbE4OxYij97i1wjaby+dQXAm+GY6YQrZhg==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -601,7 +601,7 @@ snapshots:
     dependencies:
       zod: 4.5.4
 
-  '@aletheia-ios/tools@0.5.1':
+  '@aletheia-ios/tools@0.5.2':
     dependencies:
       '@aletheia-ios/sdk': 0.4.0
       esbuild: 0.28.2

@@ -10,7 +10,7 @@ on:
 
 jobs:
   publish:
-    uses: aletheia-ios/tools/.github/workflows/publish-list.yml@v0.5.1
+    uses: aletheia-ios/tools/.github/workflows/publish-list.yml@v0.5.2
     permissions:
       contents: read
       pages: write
